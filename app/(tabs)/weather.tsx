@@ -4,7 +4,6 @@ import { ThemedView } from '@/components/ThemedView';
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, Image, Dimensions } from 'react-native';
 
-// Mapeo de los códigos WMO a descripciones legibles
 const weatherCodeDescriptions: { [key: number]: string } = {
   0: 'Despejado',
   1: 'Principalmente despejado',

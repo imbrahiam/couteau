@@ -14,7 +14,7 @@ const NewsScreen = () => {
         const response = await axios.get(
           'https://newsapi.org/v2/top-headlines?country=us&apiKey=2fe65d1e59184d71a6bfc0b902b99abd'
         );
-        setNews(response.data.articles.slice(0, 3)); // Show top 5 articles
+        setNews(response.data.articles.slice(0, 3));
       } catch (error) {
         console.error('Error fetching news:', error);
       }
@@ -27,7 +27,7 @@ const NewsScreen = () => {
       headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
       headerImage={
         <Image
-          source={require('@/assets/images/news.jpg')} // Replace with your news image
+          source={require('@/assets/images/news.jpg')}
           style={styles.headerImage}
         />
       }
